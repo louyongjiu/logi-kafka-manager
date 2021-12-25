@@ -3,7 +3,7 @@ FROM openjdk:16-jdk-alpine3.13
 LABEL author="fengxsong"
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk add --no-cache tini
 
-ENV  VERSION 2.4.2
+ENV  VERSION 2.5.0
 WORKDIR /opt/
 
 ENV AGENT_HOME /opt/agent/
