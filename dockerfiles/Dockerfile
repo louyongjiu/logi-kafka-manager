@@ -18,8 +18,8 @@ ENV JAVA_OPTS="-verbose:gc  \
 
 RUN wget https://github.com/louyongjiu/logi-kafka-manager/releases/download/v${VERSION}/kafka-manager-${VERSION}.tar.gz && \
     tar xvf kafka-manager-${VERSION}.tar.gz && \
-    mv kafka-manager-${VERSION}/kafka-manager /opt/kafka-manager && \
-    rm -rf kafka-manager-${VERSION}
+    mv kafka-manager /opt/kafka-manager && \
+    rm -rf kafka-manager
 
 EXPOSE 8080  9999
 
